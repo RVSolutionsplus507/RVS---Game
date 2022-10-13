@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+body {
+    font-family: 'Odibee Sans', cursive;
+    background-image: url(./img/background.png);
+    /* position: fixed; 
+    top: 0; 
+    left: 0;  */
+
+    /* Preserve aspet ratio */
+    min-width: 90%;
+    min-height: 90%;
+    color: rgb(255, 255, 255);
+}
+
+div.logorvs {
+    display: block;
+    margin-left: 10px;
+    margin-right: auto;
+
+}
+
+h1 {
+    font-size: 50px;
+
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.seleccionar {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+
+.nombres {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 10%;
+    background-color: rgba(255, 255, 255, 0.564);
+    margin-bottom: 30px;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 20px;
+}
+
+.tarjetas img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
+
+
+input {
+    display: none;
+}
+
+input:checked+label {
+    background-color: rgba(48, 48, 48, 0.398);
+}
+
+input:hover+label {
+    background-color: rgba(48, 48, 48, 0.398);
+}
+
+#boton_seleccionar {
+    width: 180px;
+    height: 54px;
+    background: transparent;
+    border-radius: 25px;
+    border: 3px solid rgb(255, 255, 255);
+    margin-top: 30px;
+}
+
+#boton_seleccionar h3 {
+    color: rgb(255, 255, 255);
+}
+
+#boton_seleccionar:hover {
+
+    background-color: rgba(255, 255, 255, 0.619);
+    border-radius: 10px;
+    border: 2px solid rgba(54, 53, 53, 0.486);
+    border-radius: 25px;
+}
+
+.ataques {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.boton_ataques {
+    width: 190px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.564);
+}
+
+#mensajes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+#boton_reiniciar {
+    width: 180px;
+    height: 54px;
+    background: transparent;
+    border-radius: 25px;
+    border: 3px solid rgb(255, 255, 255);
+    margin-top: 30px;
+
+}
+
+#boton_reiniciar h3 {
+    color: rgb(255, 255, 255);
+}
+
+#boton_reiniciar:hover {
+
+    background-color: rgba(255, 255, 255, 0.619);
+    border-radius: 10px;
+    border: 2px solid rgba(54, 53, 53, 0.486);
+    border-radius: 25px;
+}
+
+.gridmensajes {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+    border: 3px solid rgb(254, 254, 254);
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.gridreglas {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+    border: 3px solid rgb(9, 9, 9);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.alineartitulo {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid rgb(9, 9, 9);
+    margin-top: 20px;
+}
+
+#mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -80px;
+}
+
+#maparvs{
+    border: 2px solid white;
+}
+
+.botones_movimiento{
+    display: flex;
+}
+
+.boton_mouse{
+    color: white;
+    flex-direction: row;
+    width: 85px;
+    height: 30px;
+    background: transparent;
+    border-radius: 25px;
+    border: 3px solid rgb(255, 255, 255);
+    margin-top: 0px;
+}
+
+.boton_mouse:hover{
+    background-color: rgba(255, 255, 255, 0.619);
+    border-radius: 10px;
+    border: 2px solid rgba(54, 53, 53, 0.486);
+    border-radius: 25px;
+}
+.boton_mouse h5{
+    color: rgb(255, 255, 255);
+}
+
+
+
+@media (max-width: 360px) {
+    .tarjetas {
+        flex-direction: column;
+    }
+
+    .contenedorataques {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+}

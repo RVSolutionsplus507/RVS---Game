@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RVS Game</title>
+</head>
+
+<body>
+    <div class="logorvs">
+        <img src="./img/logo.png" alt="RVS" width="200px" height="100px">
+    </div>
+
+    <section class="seleccionar" id="seleccionar">
+        <h1>RVS-Game💧🔥🌱 </h1>
+        <h2>Selecciona tu Avatar!! 🕹️</h2>
+        <div id="contenedortarjetas" class="tarjetas"></div>
+
+        <!-- <div class="btn_seleccionar"> -->
+        <button id="boton_seleccionar">
+            <h3>SELECCIONAR</h3>
+        </button>
+    </section>
+    <section id="mapa">
+        <h1>Villa RVS 💧🔥🌱 </h1>
+        <canvas id="maparvs"></canvas>
+        <h2>Mueve tu Avatar! 🕹️</h2>
+        <div class="botones_movimiento"> 
+            <button class="boton_mouse" onmouseup="detenermovimiento()" onmousedown="moverizquierda()">Izquierda</button>
+            <button class="boton_mouse" onmouseup="detenermovimiento()" onmousedown="moverarriba()">Arriba</button>
+            <button class="boton_mouse" onmouseup="detenermovimiento()" onmousedown="moverderecha()">Derecha</button>
+            <button class="boton_mouse" onmouseup="detenermovimiento()" onmousedown="moverabajo()">Abajo</button>
+        </div>
+        
+    </section> 
+    <div class="ataques" id="ataques">
+        <h1>RVS-Game💧🔥🌱 </h1>
+        <h2>Empieza tu Ataque! ⚔️</h2>
+        <div id="contenedorataques" class="contenedorataques">
+            <button id="boton_agua" class="boton_ataques">
+                <p class="ataques">AGUA 💧</p>
+            </button>
+            <button id="boton_fuego" class="boton_ataques">
+                <p class="ataques">FUEGO 🔥</p>
+            </button>
+            <button id="boton_tierra" class="boton_ataques">
+                <p class="ataques">TIERRA 🌱</p>
+        </div>
+
+
+        <div class="reglas" id="reglas">
+            <div class="alineartitulo">
+                <p>TU AVATAR ES <span id="avatar_jugador"></span></p>
+                <p>AVATAR PC ES <span id="avatar_pc"></span></p>
+            </div>
+
+            <div class="gridreglas">
+                <p>VIDAS</p>
+                <p>VIDAS</p>
+                <p><span id="vidas_jugador">3</span></p>
+                <p><span id="vidas_pc">3</span></p>
+
+            </div>
+        </div>
+
+        <div class="mensajes" id="mensajes">
+            <div class="gridmensajes">
+                <div id="a_jugador"></div>
+                <div id="a_pc"></div>
+            </div>
+        </div>
+        <div class="reinicio" id="reinicio">
+            <button id="boton_reiniciar">
+                <h3>REINICIAR</h3>
+            </button>
+        </div>
+    </div>
+
+    <script src="./code.js"></script>
+</body>
+
+</html>
