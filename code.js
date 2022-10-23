@@ -7,23 +7,16 @@ const botonAgua = document.getElementById("boton_agua")
 const botonFuego = document.getElementById("boton_fuego")
 const botonTierra = document.getElementById("boton_tierra")
 const botonreiniciar = document.getElementById("boton_reiniciar")
-
 const sectionSeleccionarAvatares = document.getElementById("seleccionar")
-
 const spanAvatarJugador = document.getElementById("avatar_jugador")
-
 const spanAvatarPC = document.getElementById("avatar_pc")
-
 const ataq_jugador = document.getElementById("a_jugador")
 const ataq_pc = document.getElementById("a_pc")
-
 const nuevoAjugador = document.createElement("p")
 const nuevoApc = document.createElement("p")
 const spanVidasJugador = document.getElementById("vidas_jugador")
 const spanVidasPC = document.getElementById("vidas_pc")
-
 const contenedorTarjetas = document.getElementById("contenedortarjetas")
-
 const sectionmapa = document.getElementById("mapa")
 const mapa = document.getElementById("maparvs")
 
@@ -72,7 +65,6 @@ class Personaje {
 let blastoide = new Personaje("Blastoide", "./img/blastoide.png", 3)
 let charmander = new Personaje("Charmander", "./img/charmander.png", 3)
 let metapod = new Personaje("Metapod", "./img/metapod.png", 3)
-
 let blastoideenemigo = new Personaje("Blastoide", "./img/blastoide.png", 3, 80, 120)
 let charmanderenemigo = new Personaje("Charmander", "./img/charmander.png", 3, 395, 25)
 let metapodenemigo = new Personaje("Metapod", "./img/metapod.png", 3, 300, 190)
@@ -105,14 +97,11 @@ function iniciarjuego() {
     botonreiniciar.addEventListener("click", reiniciarjuego)
 }
 
-
 //Avatar del Jugador
 function seleccionarAvatarJugador() {
 
     sectionSeleccionarAvatares.style.display = "none"
-    // sectionSeleccionarAtaque.style.display = "flex"
     sectionSeleccionarReglas.style.display = "block"
-
 
     if (inputblastoide.checked) {
         spanAvatarJugador.innerHTML = inputblastoide.id
@@ -181,7 +170,6 @@ function mensajeCombate() {
 
     nuevoAjugador.innerHTML = combateJugador
     nuevoApc.innerHTML = combatePC
-    // parrafo.innerHTML = `Tu Avatar atacó con: ${combateJugador} La PC atacó con: ${combatePC}`
 
     ataq_jugador.appendChild(nuevoAjugador)
     ataq_pc.appendChild(nuevoApc)
